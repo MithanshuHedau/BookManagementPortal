@@ -121,11 +121,12 @@ const AdminOrders = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
           <div className="bg-white rounded-lg shadow-md p-4">
             <div className="flex items-center">
-              <FiDollarSign className="h-8 w-8 text-green-600 mr-3" />
+              {/* <FiDollarSign className="h-8 w-8 text-green-600 mr-3" /> */}
+              <i class="fa-solid text-3xl pr-2 text-green-600 fa-indian-rupee-sign"></i>
               <div>
                 <p className="text-sm text-gray-600">Total Revenue</p>
                 <p className="text-2xl font-bold text-green-600">
-                  ${totalRevenue.toFixed(2)}
+                  {totalRevenue.toFixed(2)}
                 </p>
               </div>
             </div>
@@ -239,8 +240,8 @@ const AdminOrders = () => {
                     )}{" "}
                     items
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-green-600">
-                    ${order.totalAmount.toFixed(2)}
+                  <td className="px-5 py-4 whitespace-nowrap text-sm font-semibold text-green-600">
+                   <i class="fa-solid fa-indian-rupee-sign"></i> {order.totalAmount.toFixed(2)}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <select

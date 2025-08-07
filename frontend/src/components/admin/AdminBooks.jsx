@@ -188,7 +188,7 @@ const AdminBooks = () => {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-green-600">
-                    ${book.price}
+                    <i class="fa-solid text-xs p-0.5 fa-indian-rupee-sign"></i>{book.price}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span
