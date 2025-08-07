@@ -278,11 +278,6 @@ Can be deployed on platforms like:
 
 ## 📄 Environment Variables
 
-### Backend (.env)
-
-```env
-
-```
 
 ## 🤝 Contributing
 
@@ -301,7 +296,7 @@ This project is licensed under the ISC License.
 **Mithanshu Hedau**
 
 - GitHub: [@MithanshuHedau](https://github.com/MithanshuHedau)
-- Project Link: [BookManagementPortal](https://github.com/MithanshuHedau/BookManagementPortal)
+- Project Link: [BookManagementPortal](https://panchtatvabookstore.vercel.app/)
 
 ## 🙏 Acknowledgments
 
@@ -313,7 +308,7 @@ This project is licensed under the ISC License.
 
 ## 📞 Support
 
-If you have any questions or need help with the project, please open an issue on GitHub or contact the author.
+If you have any questions or need help with the project, please open an issue on GitHub or DM me .
 
 ---
 
