@@ -1,3 +1,4 @@
+// Dashboard for Admin to manage bookstore
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { adminAPI } from "../../utils/api";
@@ -124,12 +125,13 @@ const AdminDashboard = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center">
             <div className="bg-yellow-100 p-3 rounded-full">
-              <FiDollarSign className="h-6 w-6 text-yellow-600" />
+              <i class="fa-solid text-xl text-yellow-600 p-0.5 fa-indian-rupee-sign"></i>
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Total Revenue</p>
               <p className="text-2xl font-bold text-gray-900">
-                ${stats.totalRevenue.toFixed(2)}
+                <i class="fa-solid text-xl text-yellow-600 p-0.5 fa-indian-rupee-sign"></i>
+                {stats.totalRevenue.toFixed(2)}
               </p>
             </div>
           </div>
@@ -238,7 +240,8 @@ const AdminDashboard = () => {
                   </div>
                   <div className="text-right">
                     <p className="text-sm font-semibold text-gray-900">
-                      ${order.totalAmount.toFixed(2)}
+                      <i class="fa-solid text-xs text-green-600 p-0.5 fa-indian-rupee-sign"></i>
+                      {order.totalAmount.toFixed(2)}
                     </p>
                     <span
                       className={`px-2 py-1 rounded-full text-xs font-medium capitalize ${getStatusColor(
@@ -277,7 +280,8 @@ const AdminDashboard = () => {
 
           <div className="text-center">
             <div className="text-2xl font-bold text-yellow-600 mb-2">
-              ${(stats.totalRevenue / (stats.totalOrders || 1)).toFixed(2)}
+              <i class="fa-solid text-xl text-yellow-600 p-1 fa-indian-rupee-sign"></i>
+              {(stats.totalRevenue / (stats.totalOrders || 1)).toFixed(2)}
             </div>
             <p className="text-sm text-gray-600">Average order value</p>
           </div>
