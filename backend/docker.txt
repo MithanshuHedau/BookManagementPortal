@@ -1,0 +1,2 @@
+docker build -t mern-backend .     -. isse image create ho jayegi jisme apan apna execuatble code rakh sakte hai 
+docker run -p 5000:5000 --name backend --env-file .env mern-backend 
