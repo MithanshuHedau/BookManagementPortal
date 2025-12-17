@@ -1,7 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-// const API_BASE_URL = "https://bookmithanshuapi.onrender.com";
 const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Create axios instance
