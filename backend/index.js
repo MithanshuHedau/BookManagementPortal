@@ -8,7 +8,16 @@ const cors = require("cors");
 /* MiddleWare Start*/
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://panchtatvabookstore.vercel.app/", // Add your Vercel URL
+      /\.vercel\.app$/, // Or allow all Vercel subdomains
+    ],
+    credentials: true,
+  })
+);
 /*MiddleWare End*/
 
 /*Import Routes */
